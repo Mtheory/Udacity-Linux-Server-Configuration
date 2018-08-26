@@ -20,20 +20,19 @@ Using baseline installation of a Linux distribution on a virtual machine prepare
 
 - sudo apt-get update  				- *update the package source list*_ 
 - sudo apt-get upgrade 				- *upgrade the packages*
-<br/>
-** Automatic updates**
+
+**Automatic updates**
 - sudo apt-get install unattended-upgrades - *enable automatic updates*
 - sudo nano /etc/apt/apt.conf.d/50unattended-upgrades 
-	1. find line and un-comment : ${distro_id}:${distro_codename}-updates
+	1. find line and un-comment : "${distro_id}:${distro_codename}-updates"
 	3. save it
-<br/>
 - sudo nano /etc/apt/apt.conf.d/20auto-upgrade
-```
-APT::Periodic::Update-Package-Lists "1";
-APT::Periodic::Download-Upgradeable-Packages "1";
-APT::Periodic::AutocleanInterval "7";
-APT::Periodic::Unattended-Upgrade "1"
-```
+    ```
+    APT::Periodic::Update-Package-Lists "1";
+    APT::Periodic::Download-Upgradeable-Packages "1";
+    APT::Periodic::AutocleanInterval "7";
+    APT::Periodic::Unattended-Upgrade "1"
+    ```
 - sudo dpkg-reconfigure --priority=low unattended-upgrades - *enable*
 
 ### Change the SSH port from 22 to 2200

@@ -7,6 +7,7 @@ Using baseline installation of a Linux distribution on a virtual machine prepare
 - The Linux distribution is [Ubuntu](https://www.ubuntu.com/download/server) 16.04 LTS.
 - The virtual private server is [Amazon Lighsail](https://lightsail.aws.amazon.com/).
 - Application URL: http://35.176.103.212.xip.io/
+- Application IP: 35.176.103.2102
 - Application name: BookCatalog
 - Port for SSH connection 2200
 	ssh -i ~/.ssh/ privateKey grader@ 35.176.103.212

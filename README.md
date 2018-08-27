@@ -9,6 +9,7 @@ Using baseline installation of a Linux distribution on a virtual machine prepare
 - Application URL: http://35.176.103.212.xip.io/
 - Application name: BookCatalog
 - Port for SSH connection 2200
+	ssh -i ~/.ssh/ privateKey grader@ 35.176.103.212
 - 	ssh -i [key_file_path] grader@52.42.38.177 -p 2200
 
 ## Start a new Ubuntu Linux server instance on Amazon Lightsail 
